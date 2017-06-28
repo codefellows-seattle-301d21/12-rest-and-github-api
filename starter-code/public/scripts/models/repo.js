@@ -16,7 +16,7 @@ var app = app || {};
       url: 'https://api.github.com/user/repos',
       headers: token,
       success: function(data, message){
-        repos.all.push(data);
+        repos.all = data;
         callback();
         console.log(message);
       }
