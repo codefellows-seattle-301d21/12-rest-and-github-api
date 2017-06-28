@@ -1,5 +1,7 @@
 
-# Created by https://www.gitignore.io/api/osx,node,linux,windows
+# Created by https://www.gitignore.io/api/osx,node,linux,windows\
+
+/scripts/models/githubToken.js
 
 ### Linux ###
 *~
