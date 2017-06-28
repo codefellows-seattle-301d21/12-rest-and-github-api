@@ -14,7 +14,11 @@ var app = app || {};
     $.ajax({
       url: 'https://api.github.com/users/sharmarkei/repos',
       method: 'GET',
-      headers: {'Authorization': 'token ${githubToken}'}
+      headers: {'Authorization': 'token ' + githubToken}
+      .then(function(data){
+        repos.all = data;
+        callback();
+      })
     })
   };
 
