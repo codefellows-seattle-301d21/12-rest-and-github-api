@@ -16,10 +16,10 @@ var app = app || {};
       url:'http://api.github.com/user/repos',
       method:'GET',
       headers:{'Authorization': 'token ' + githubToken}
+      })
       .then(function(data){
         repos.all = data;
         callback();
-      })
     })
 
   };
